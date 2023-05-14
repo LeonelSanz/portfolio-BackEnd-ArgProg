@@ -27,7 +27,7 @@ import com.portfolio.leo.Service.SExperiencia;
 
 @RestController
 @RequestMapping("/explab")
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"https://protfolio-argprog.web.app/"})
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;

@@ -21,7 +21,7 @@ import com.portfolio.leo.Service.ImpPersonaService;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"https://protfolio-argprog.web.app/"})
 public class PersonaController {
     @Autowired
     ImpPersonaService personaService;
