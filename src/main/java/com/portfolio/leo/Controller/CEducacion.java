@@ -27,7 +27,7 @@ import com.portfolio.leo.Service.Seducacion;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = {"https://protfolio-argprog.web.app/"})
+@CrossOrigin(origins = {"https://protfolio-argprog.web.app","http://localhost:4200"})
 public class CEducacion {
     @Autowired
     Seducacion sEducacion;

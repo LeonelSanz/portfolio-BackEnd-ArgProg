@@ -21,7 +21,7 @@ import com.portfolio.leo.Security.Controller.Mensaje;
 import com.portfolio.leo.Service.Shys;
 
 @RestController
-@CrossOrigin(origins = {"https://protfolio-argprog.web.app/"})
+@CrossOrigin(origins = {"https://protfolio-argprog.web.app" ,"http://localhost:4200"})
 @RequestMapping("/skill")
 public class CHys {
 

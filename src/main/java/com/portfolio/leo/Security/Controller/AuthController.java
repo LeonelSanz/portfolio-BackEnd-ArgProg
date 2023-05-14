@@ -36,7 +36,7 @@ import com.portfolio.leo.Security.jwt.JwtProvider;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "https://protfolio-argprog.web.app/")
+@CrossOrigin(origins = {"https://protfolio-argprog.web.app","http://localhost:4200"})
 public class AuthController {
     @Autowired
     PasswordEncoder passwordEncoder;
