@@ -8,10 +8,7 @@ package com.portfolio.leo.Security.jwt;
 
 import java.io.IOException;
 
-import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
@@ -30,17 +27,5 @@ public class JwtEntryPoint implements AuthenticationEntryPoint{
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
     }
     
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws IOException, ServletException {
-        HttpServletRequest httpRequest = (HttpServletRequest) request;
-        HttpServletResponse httpResponse = (HttpServletResponse) response;
-
-        // Agregar los encabezados CORS
-        httpResponse.setHeader("Access-Control-Allow-Origin", "*");
-        httpResponse.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
-        httpResponse.setHeader("Access-Control-Allow-Headers", "Origin,Accept,Content-Type,Authorization");
-
-        chain.doFilter(httpRequest, httpResponse);
-    }
     
 }

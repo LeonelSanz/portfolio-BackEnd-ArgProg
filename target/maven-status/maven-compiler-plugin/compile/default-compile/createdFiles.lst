@@ -27,7 +27,6 @@ com\portfolio\leo\Security\jwt\JwtEntryPoint.class
 com\portfolio\leo\Controller\CExperiencia.class
 com\portfolio\leo\Security\Dto\JwtDto.class
 com\portfolio\leo\Security\Repository\iUsuarioRepository.class
-com\portfolio\leo\LeoApplication$1.class
 com\portfolio\leo\Security\Entity\Usuario.class
 com\portfolio\leo\Service\Shys.class
 com\portfolio\leo\Repository\RExperiencia.class
